@@ -16,7 +16,7 @@ window.onload = function () {
     let filterNav = document.querySelector("#nav-dept");
     console.log(filterNav);
 
-    let filterButton = document.querySelector('.refine-search-btn');
+    let filterButton = document.querySelector('.refine-search-btn-container');
 
     filterButton.addEventListener('click', function() {
         if(filterNav.style.display === 'block') {
