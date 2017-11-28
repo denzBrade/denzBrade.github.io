@@ -10,7 +10,7 @@ function addTitle() {
 }
 
 window.onload = function () {
-    let filterContainer = document.querySelector("#fsm-filters-container");
-    console.log(filterContainer);
+    let masterContainer = document.querySelector("#master-container");
+    console.log(masterContainer);
     console.log('HERE IS MY SCRIPT')  
 }
