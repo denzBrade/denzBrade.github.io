@@ -23,7 +23,9 @@ function addTitle() {
     filterTitle.appendChild(filterTitleText);
 
     filterNav.insertBefore(filterTitle, filterNav.firstChild);
-}
+} 
+
+addTitle();
       
 // }
 
