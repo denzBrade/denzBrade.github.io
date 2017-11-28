@@ -5,9 +5,9 @@
 @media only screen and (max-width: 640px)  {
 	.refine-search-btn-container,
     .sort-container {
-        position: fixed !important;
-        bottom: 0 !important;
-        z-index: 999 !important;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
     }
 }
 
