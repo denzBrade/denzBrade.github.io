@@ -11,5 +11,6 @@ function addTitle() {
 
 window.onload = function () {
     let filterContainer = document.querySelector("#fsm-filters-container");
-    console.log(filterContainer);  
+    console.log(filterContainer);
+    console.log('HERE IS MY SCRIPT')  
 }
