@@ -10,7 +10,7 @@ function addTitle() {
 }
 
 window.onload = function () {
-    let filterContainer = document.querySelectorAll(".filters-nav")[0];
+    let filterContainer = document.querySelectorAll(".filters-nav")[1];
     console.log(filterContainer);
     console.log('HERE IS MY SCRIPT')  
 }
