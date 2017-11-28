@@ -86,5 +86,18 @@
         top: 10px;
         right: 50px;
     }
+
+    #nav-dept .filter-title-main {
+        display: block;
+        z-index: 9999;
+        color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f6f6f6;
+        padding: 10px;
+        text-align: center;
+    }
 }
 

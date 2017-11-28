@@ -16,16 +16,8 @@ window.onload = function () {
     let filterNav = document.querySelector("#nav-dept");
     console.log(filterNav);
 
-    let filterButton = document.querySelector('.refine-search-btn-container');
-
-    filterButton.addEventListener('click', function() {
-        if(filterNav.style.display === 'block') {
-            let filterContainer = document.querySelectorAll(".filters-nav")[1];
-            console.log(filterContainer);
-            console.log('Its VISIBLE');
-        }
-    })
-
-   
+    let filterTitle = document.createElement('h2');
+    filterTitle.className = 'filter-title-main';
+    filterNav.insertBefore(filterTitle, filterNav.firstChild);  
 }
 
