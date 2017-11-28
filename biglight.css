@@ -43,7 +43,7 @@
 * Mobile Only
 ***/
 @media only screen and (max-width: 640px) {
-    .filters-nav {
+    .nav-dept .filters-nav {
         position: fixed;
         top: 0;
         left: 0;
