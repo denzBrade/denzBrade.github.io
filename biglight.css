@@ -1,0 +1,39 @@
+/***
+* Filter Buttons Shared Styles
+* Mobile Only
+***/
+@media only screen and (max-width: 640px)  {
+	.refine-search-btn-container,
+    .sort-container {
+        position: fixed !important;
+        bottom: 0 !important;
+        z-index: 999 !important;
+    }
+}
+
+
+/***
+* Sort by filter Button
+* Mobile Only
+***/
+@media only screen and (max-width: 640px)  {
+    .sort-container {
+        right: 0;
+        width: 65%;
+    }
+
+    .sort-container .product-list-sort-by {
+        margin: 0;
+    }
+}
+
+
+/***
+* Refine filter Button
+* Mobile Only
+***/
+@media only screen and (max-width: 640px)  {
+    .refine-search-btn-container {
+        left: 0;
+    }	
+}
