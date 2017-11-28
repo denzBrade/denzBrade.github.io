@@ -10,14 +10,14 @@ function addTitle() {
 }
 
 window.onload = function () {
-    let filterContainer = document.querySelectorAll(".filters-nav")[1];
-    console.log(filterContainer);
+    
     console.log('HERE IS MY SCRIPT')
     
     let filterNav = document.querySelector("#nav-dept");
     console.log(filterNav);
 
     if(filterNav.getAttribute("style") === "display: block") {
+        let filterContainer = document.querySelectorAll(".filters-nav")[1];
         console.log(filterContainer);
     }
 }
