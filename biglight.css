@@ -60,7 +60,7 @@
         margin-bottom: 5px;
     }
 
-    .nav-dept #Catfacets .filters-nav .filter-options ul .plp-checbox {
+    .nav-dept #Catfacets .filters-nav .filter-options ul .facet-value .plp-checbox {
         border: 2px solid #f5a019;
         float: right;
     }
