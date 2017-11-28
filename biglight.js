@@ -16,9 +16,16 @@ window.onload = function () {
     let filterNav = document.querySelector("#nav-dept");
     console.log(filterNav);
 
-    if(filterNav.getAttribute("style") === "display: block") {
-        let filterContainer = document.querySelectorAll(".filters-nav")[1];
-        console.log(filterContainer);
-    }
+    let filterButton = document.querySelector('.refine-search-btn');
+
+    filterButton.addEventListener('click', function() {
+        if(filterNav.style.display === 'block') {
+            let filterContainer = document.querySelectorAll(".filters-nav")[1];
+            console.log(filterContainer);
+            console.log('Its VISIBLE');
+        }
+    })
+
+   
 }
 
