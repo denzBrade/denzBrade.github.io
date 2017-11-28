@@ -42,7 +42,7 @@
 * Filter Overlay 
 * Mobile Only
 ***/
-/* @media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .nav-dept .filters-nav {
         position: fixed;
         top: 0;
@@ -53,5 +53,5 @@
         z-index: 999;
         background-color:#d7d7d7;
     }
-} */
+}
 
