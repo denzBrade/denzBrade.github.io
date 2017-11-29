@@ -41,7 +41,7 @@ function addResetButton() {
     }
 
     function removeCheckedClass() {
-        let checkboxes = [].slice.call(document.querySelectorAll('.plp-checked'));
+        let checkboxes = [].slice.call(document.querySelectorAll('.plp-checkbox'));
 
         for (let i = 0; i < checkboxes.length; i++) {
             checkboxes[i].classList.remove('checked');
