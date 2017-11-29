@@ -40,7 +40,7 @@ function addResetButton() {
         }
     }
 
-    doneButton.addEventListener('click', function() {
+    resetButton.addEventListener('click', function() {
         uncheckFilters();
     })
 }
