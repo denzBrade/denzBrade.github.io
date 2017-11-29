@@ -33,15 +33,24 @@ function addResetButton() {
     filterSection.insertBefore(resetButton, filterSection.firstChild);
 
     function uncheckFilters() {
-        let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
+        let checkedLists = [].slice.call(document.querySelectorAll('.facet-value'));
+
+        for (let i = 0; i < checkedLists.length; i++) {
+            checkedLists[i].setAttribute('data-checked', false);
+        }
+    }
+
+    function removeCheckedClass() {
+        let checkboxes = [].slice.call(document.querySelectorAll('.plp-checked'));
 
         for (let i = 0; i < checkboxes.length; i++) {
-            checkboxes[i].setAttribute('data-checked', false);
+            checkboxes[i].classList.remove('checked');
         }
     }
 
     resetButton.addEventListener('click', function() {
         uncheckFilters();
+        removeCheckedClass();
     })
 }
 
