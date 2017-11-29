@@ -49,6 +49,7 @@ function addResetButton() {
 
         let url =  window.location.href;
         url.split('#')[0];
+        history.pushState(null, '', url);
     }
 
     resetButton.addEventListener('click', function() {
