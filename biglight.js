@@ -17,7 +17,7 @@ function addDoneButton() {
 
     doneButton.innerHTML = "Done";
     doneButton.className = 'filter-button-done';
-    filterNav.insertAfter(doneButton, filterNav.firstChild);
+    filterNav.insertBefore(doneButton, filterNav.firstChild);
 }
 
 addFilterTitle();
