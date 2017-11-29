@@ -4,6 +4,9 @@ let filterSection = document.querySelector("#nav-dept");
 let doneButton = document.createElement('button');
 let resetButton = document.createElement('button');
 
+let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
+console.log(checkboxes);
+
 function addFilterTitle() {
     let filterTitle = document.createElement('h2');
     let filterTitleText = document.createTextNode('Filter');
@@ -31,9 +34,6 @@ function addResetButton() {
     resetButton.innerHTML = "Reset";
     resetButton.className = 'filter-button-reset';
     filterSection.insertBefore(resetButton, filterSection.firstChild);
-
-    let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
-    console.log(checkboxes);
 
     function uncheckFilters() {
         // let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
