@@ -3,7 +3,7 @@
 let filterSection = document.querySelector("#nav-dept");
 let doneButton = document.createElement('button');
 let resetButton = document.createElement('button');
-let currentUrl =  window.location.search.split('#')[0];
+let currentUrl =  window.location.href.split('#')[0];
 
 function addFilterTitle() {
     let filterTitle = document.createElement('h2');
@@ -53,6 +53,7 @@ function addResetButton() {
         uncheckFilters();
         removeCheckedClass();
         window.history.pushState(null, '', currentUrl);
+        location.reload();
     })
 }
 
