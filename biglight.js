@@ -19,7 +19,7 @@ function addDoneButton() {
     filterSection.insertBefore(doneButton, filterSection.firstChild);
 
     function hideFilters() {
-        filterSection.style.display === 'none' ? '' : 'none';
+        filterSection.style.display = filterSection.style.display === 'none' ? '' : 'none';
     }
 
     doneButton.addEventListener('click', function() {
