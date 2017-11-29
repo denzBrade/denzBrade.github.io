@@ -31,6 +31,15 @@ function addResetButton() {
     resetButton.innerHTML = "Reset";
     resetButton.className = 'filter-button-reset';
     filterSection.insertBefore(resetButton, filterSection.firstChild);
+
+    function uncheckFilters() {
+        let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
+        console.log(checkboxes);
+    }
+
+    doneButton.addEventListener('click', function() {
+        uncheckFilters();
+    })
 }
 
 
