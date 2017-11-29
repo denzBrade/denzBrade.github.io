@@ -46,6 +46,9 @@ function addResetButton() {
         for (let i = 0; i < checkboxes.length; i++) {
             checkboxes[i].classList.remove('checked');
         }
+
+        let url =  window.location.href;
+        url.split('#')[0];
     }
 
     resetButton.addEventListener('click', function() {
