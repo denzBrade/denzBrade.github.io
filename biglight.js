@@ -1,9 +1,10 @@
 // Create & Add Filter Title to DOM
+
 let filterSection = document.querySelector("#nav-dept");
+let doneButton = document.createElement('button');
+let resetButton = document.createElement('button');
 
 function addFilterTitle() {
-    
-    // let filterNav = document.querySelector("#nav-dept");
     let filterTitle = document.createElement('h2');
     let filterTitleText = document.createTextNode('Filter');
 
@@ -13,26 +14,31 @@ function addFilterTitle() {
 } 
 
 function addDoneButton() {
-    // let filterNav = document.querySelector("#nav-dept");
-    let doneButton = document.createElement('button');
-
     doneButton.innerHTML = "Done";
     doneButton.className = 'filter-button-done';
     filterSection.insertBefore(doneButton, filterSection.firstChild);
+
+    function hideFilters() {
+        filterSection.classList.toggle("hide-filters");
+    }
+
+    doneButton.addEventListener('click', function() {
+        hideFilters();
+    })
 }
 
 function addResetButton() {
-    // let filterNav = document.querySelector("#nav-dept");
-    let resetButton = document.createElement('button');
-
     resetButton.innerHTML = "Reset";
     resetButton.className = 'filter-button-reset';
     filterSection.insertBefore(resetButton, filterSection.firstChild);
 }
 
+
+
 addFilterTitle();
 addDoneButton();
 addResetButton();
-      
+
+
 
 

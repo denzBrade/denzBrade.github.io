@@ -119,5 +119,9 @@
         right: 30px;
     }
 
+    .hide-filters {
+        display: none;
+    }
+
 }
 
