@@ -46,15 +46,15 @@ function addResetButton() {
         for (let i = 0; i < checkboxes.length; i++) {
             checkboxes[i].classList.remove('checked');
         }
-
-        let url =  window.location.href;
-        url.split('#')[0];
-        history.pushState(null, '', url);
     }
 
     resetButton.addEventListener('click', function() {
         uncheckFilters();
         removeCheckedClass();
+
+        let url =  window.location.href;
+        url.split('#')[0];
+        window.history.pushState(null, '', url);
     })
 }
 
