@@ -100,14 +100,24 @@
         text-align: center;
     }
 
-    #nav-dept .filter-button-done {     
+    #nav-dept .filter-button-done,
+    #nav-dept .filter-button-reset { 
+        position: fixed;    
         bottom: 0;
-        left: 15px;
         z-index: 9999;
         margin-bottom: 0;
         width: 40%;
         background-color: #000;
         border: 1px solid #000;
     }
+
+    #nav-dept .filter-button-done {
+        left: 15px;
+    }
+
+    #nav-dept .filter-button-reset {
+        right: 30px;
+    }
+
 }
 
