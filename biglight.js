@@ -32,9 +32,12 @@ function addResetButton() {
     resetButton.className = 'filter-button-reset';
     filterSection.insertBefore(resetButton, filterSection.firstChild);
 
+    let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
+    console.log(checkboxes);
+
     function uncheckFilters() {
-        let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
-        console.log(checkboxes);
+        // let checkboxes = [].slice.call(document.querySelectorAll('.facet-value'));
+        // console.log(checkboxes);
     }
 
     doneButton.addEventListener('click', function() {
